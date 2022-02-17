@@ -1,49 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Applied Accessibility</title>
-	</head>
-	<style>
-		h1 {
-			text-align: center;
-		}
-		img {
-			max-width: 100%;
-			height: auto;
-		}
-	</style>
-	<body>
-		<header>
-			<!-- The header tag shares the embedded landmark feature you saw with main, 
-			allowing assistive technology to quickly navigate to that content. -->
-			<h1>Applied Accessibility with images</h1>
-		</header>
-		<main>
-			<!-- the main element is used to wrap the main content-->
 
-			<article>
-				<!-- article is a sectioning element and is used to wrap independent, 
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Applied Accessibility</title>
+</head>
+<style>
+	h1 {
+		text-align: center;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+</style>
+
+<body>
+	<header>
+		<!-- The header tag shares the embedded landmark feature you saw with main, 
+			allowing assistive technology to quickly navigate to that content. -->
+		<h1>Applied Accessibility with images</h1>
+
+		<nav>
+			<!-- The nav element make screen reader navigation easier. This tag is meant 
+				to wrap around the main navigation links in your page. -->
+
+			<ul>
+				<li><a href="#flora">Flora &amp; Fauna</a></li>
+				<li><a href="#landscape">Landscape</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<!-- the main element is used to wrap the main content-->
+
+		<article>
+			<!-- article is a sectioning element and is used to wrap independent, 
         self-contained content -->
 
-				<h2>Using the article tag to wrap independent content</h2>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero a
-					praesentium ea magnam suscipit dolores sunt molestias! Eligendi quo
-					enim laborum debitis, eum quis voluptatem praesentium facere fugiat
-					doloremque quisquam.
-				</p>
-			</article>
+			<h2>Using the article tag to wrap independent content</h2>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero a
+				praesentium ea magnam suscipit dolores sunt molestias! Eligendi quo
+				enim laborum debitis, eum quis voluptatem praesentium facere fugiat
+				doloremque quisquam.
+			</p>
+		</article>
 
+		<article>
+			<!-- There is the article that contain a title, and a picture about of Seagulls -->
+			<h2>Seagulls</h2>
+			<img src="./images/seagull.jpg" alt="Seagull" />
+		</article>
+
+		<section id="flora">
+
+			<h2>Flora &amp; Fauna</h2>
 			<article>
-				<!-- There is the article that contain a title, and a picture about of Seagulls -->
-				<h2>Seagulls</h2>
-				<img src="./images/seagull.jpg" alt="Seagull" />
+				<h3>Wildlife diversity is a notable feature of Nepal.</h3>
 			</article>
-		</main>
 
-		<footer></footer>
-	</body>
+			<h2>Landscape</h2>
+			<article>
+				<h3>In recent years the development cooperation landscape has been changing.</h3>
+			</article>
+	</main>
+
+	<footer></footer>
+</body>
+
 </html>
